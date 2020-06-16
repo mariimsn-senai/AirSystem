@@ -30,7 +30,7 @@ namespace AirSystem2.Views
             new frmNovoUsuario().ShowDialog();
             carregaLista();
         }
-        private void dgvListaAluno_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvListaUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow linha = dataGridView1.Rows[e.RowIndex];
 
@@ -98,14 +98,30 @@ namespace AirSystem2.Views
 
         }
 
+        private void Listar()
+        {
+            UsuarioRepository rps = new UsuarioRepository();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = rps.buscarTodos();
+            alterarContador();
+        }
+
+
+        private void btnDeletarLista_Click(object sender, DataGridViewCellMouseEventArgs e)
+        {
+        }
+
         private void btnDeletarLista_Click(object sender, EventArgs e)
         {
-           
+
         }
+  
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+
     }
 }

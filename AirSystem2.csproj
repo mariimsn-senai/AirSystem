@@ -95,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
@@ -118,6 +119,26 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb2-flying-a380-blue-sky-clouds-airbus-a380-airliner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airbus_A350-Aircraft_HD_Wallpaper_1366x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transporte-Aéreo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01852e864e9e2dafb8860529b653268f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\569225 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb2-flying-a380-blue-sky-clouds-airbus-a380-airliner1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
